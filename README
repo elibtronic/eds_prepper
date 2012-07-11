@@ -1,0 +1,18 @@
+Converts Data outputed from SFX to Ebsco Local Collections compliant:
+
+ISSN<TAB>TITLE
+
+prep_sfx.py
+Reads info from SFX Export file that looks like this:
+#ISSN	eISSN	ISBN	eISBN	LCCN	LOCAL	OBJECT_ID	TITLE	TARGET_INTERNAL_NAME	TARGET_PUBLIC_NAME	TARGET_SERVICE	AVAILABILITY	PARSER	PARSE_PARAM	THRESHOLD_ACTIVE	THRESHOLD_GLOBAL	CATEGORIES	PUBLISHER	NOTE	AUTHENTICATION	LANGUAGE	TITLE_MAIN	INSTITUTE
+
+sp_side_prep.py
+Reads Scholars Portal generated data
+eg. http://sfx.scholarsportal.info/export_files/holdings_brock.txt
+
+
+eds_prepper.py
+Does both
+
+Caveat: Does not remove dupes.
+Not sure it needs too
